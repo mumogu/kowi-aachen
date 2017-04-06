@@ -1,0 +1,61 @@
+$mobile-breakpoint: 800px;
+
+div.container {
+  padding: 0px;
+  max-width: $mobile-breakpoint;
+  margin: 0 auto;
+  color: black;
+  font-size: 1em;
+}
+
+/* Rows have no styling, they are basically a classic old clearfix hack
+--------------------------------------------------*/
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* Columns. They are all full-width on mobile
+--------------------------------------------------*/
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: $mobile-breakpoint) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: $mobile-breakpoint) {
+  .one,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .half {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
