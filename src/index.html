@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1>Index</h1>
+Das ist die Index-Seite. 
+
+<h1>Hier sind alle Posts:</h1>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>      
+    </li>
+  {% endfor %}
+</ul>
+
+
