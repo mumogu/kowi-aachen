@@ -2,13 +2,9 @@ $color-bg: rgb(35, 47, 62);
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 3vh;
+  font-size: 16px;
   margin: 0;
   color: white;
-}
-
-h1, p {
-  font-weight: 100;
 }
 
 div#header-image {
@@ -54,4 +50,8 @@ div.main-message {
   margin: 0 auto;
   margin-top: 20vh;
   max-width: 800px;
+
+  h1, p {
+    font-weight: 100;
+  }
 }
