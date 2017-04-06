@@ -13,7 +13,12 @@ layout: default
 
                 <div class="main-message">
                     <h1>{{ page.title }}</h1>
-                    <p>{{ page.subtitle }}</p>
+                    <p>
+                        {% if page.author %}
+                            {{ page.author }} im {{ page.date | date: '%B %Y' }}
+                        {% endif %}
+
+                        {{ page.subtitle }}</p>
                 </div>
             </div>
 

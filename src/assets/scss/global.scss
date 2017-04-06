@@ -1,4 +1,10 @@
 $color-bg: rgb(35, 47, 62);
+$color-primary: hotpink;
+
+a, a:link, a:visited, a:active  {
+  color: $color-primary;
+  text-decoration: none;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
