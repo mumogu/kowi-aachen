@@ -5,7 +5,7 @@ div.container {
   max-width: $mobile-breakpoint;
   margin: 0 auto;
   color: black;
-  font-size: 1em;
+  //font-size: 1em;
 }
 
 /* Rows have no styling, they are basically a classic old clearfix hack
@@ -26,6 +26,7 @@ div.container {
 .half {
   width: 100%;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: $mobile-breakpoint) {
@@ -48,6 +49,7 @@ div.container {
     float: left;
   }
 }
+
 
 @media only screen and (min-width: $mobile-breakpoint) {
   .one,

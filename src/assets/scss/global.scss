@@ -18,7 +18,7 @@ div#header-image {
   background-size: cover;
 }
 
-div.logo {
+div#logo {
   padding-top: 1vh;
   color: black;
   text-align: center;
@@ -42,6 +42,7 @@ div.main-message {
   margin: 0 auto;
   margin-top: 20vh;
   max-width: 800px;
+  color: white;
 
   h1, p {
     font-weight: 100;
