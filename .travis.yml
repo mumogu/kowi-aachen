@@ -1,3 +1,6 @@
+branches:
+  only:
+    - deploy
 language: ruby
 before_install:
   - npm install
