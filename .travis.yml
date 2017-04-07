@@ -1,0 +1,7 @@
+language: ruby
+before_install:
+  - npm install
+  - npm install -g gulp
+
+install: gem install jekyll
+script: gulp build 
