@@ -15,22 +15,14 @@ body {
 
 /****************************************************/
 nav#navbar {
+  background-color: $color-bg;
+
   input[type=checkbox] {
     position: absolute;
     top: -9999px;
     left: -9999px;
     opacity: 0;
   }
-
-  input[type=checkbox]:checked ~ div {
-    display: block;
-  }
-
-  background-color: $color-bg;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 
   a {
     color: white;
@@ -41,36 +33,43 @@ nav#navbar {
     border-bottom: 1px solid $color-primary;
   }
 
-  div#nav-logo, div#nav-brand, div#nav-hamburger {
-    display: block;
-    padding: 5px;
-  }
-
-  div {
-    display: none;
-    padding: 10px;
-  }
-
-
-  img {
-    filter: invert(100%);
-    height: 50px;
-  }
-
-  @media (min-width: 800px) {
-
-    justify-content: center;
+  div#nav-always {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      filter: invert(100%);
+      height: 50px;
+    }
+
+    div#nav-brand {
+      flex: 1;
+    }
 
     div {
-      display: block;
-      padding: 20px;
+      padding: 10px;
+    }
+  }
+
+  div#nav-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    div {
+      display: none;
+      padding: 10px;
     }
 
-    div#nav-logo, div#nav-brand, div#nav-hamburger {
+    input[type=checkbox]:checked ~ div {
       display: block;
     }
 
+    @media (min-width: 800px) {
+    }
   }
 }
 
