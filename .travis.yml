@@ -1,12 +1,18 @@
+# only build the deploy branch
 branches:
   only:
     - deploy
-language: ruby
-rvm:
-  - 2.2
+
+# needs both a current nodejs (with ES6 support) and ruby >=2.2
+language: node_js
+node_js:
+  - "7"
+
 before_install:
+  - rvm install 2.2
   - npm install
   - npm install -g gulp
 
 install: gem install jekyll
+
 script: gulp build 
