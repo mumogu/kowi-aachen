@@ -67,8 +67,15 @@ nav#navbar {
     input[type=checkbox]:checked ~ div {
       display: block;
     }
+  }
 
-    @media (min-width: 800px) {
+  @media (min-width: 800px) {
+    div#nav-hamburger {
+      display: none;
+    }
+
+    div#nav-toggle div {
+      display: block;
     }
   }
 }
