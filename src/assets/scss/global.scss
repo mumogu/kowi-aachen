@@ -1,7 +1,7 @@
 $color-bg: rgb(35, 47, 62);
-$color-primary: hotpink;
+$color-primary: rgb(205, 73, 57);
 
-a, a:link, a:visited, a:active  {
+a, a:link, a:visited, a:active {
   color: $color-primary;
   text-decoration: none;
 }
@@ -12,6 +12,69 @@ body {
   margin: 0;
   color: white;
 }
+
+/****************************************************/
+nav#navbar {
+  input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+  }
+
+  input[type=checkbox]:checked ~ div {
+    display: block;
+  }
+
+  background-color: $color-bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  a {
+    color: white;
+    font-weight: 100;
+  }
+
+  a:hover {
+    border-bottom: 1px solid $color-primary;
+  }
+
+  div#nav-logo, div#nav-brand, div#nav-hamburger {
+    display: block;
+    padding: 5px;
+  }
+
+  div {
+    display: none;
+    padding: 10px;
+  }
+
+
+  img {
+    filter: invert(100%);
+    height: 50px;
+  }
+
+  @media (min-width: 800px) {
+
+    justify-content: center;
+    flex-direction: row;
+
+    div {
+      display: block;
+      padding: 20px;
+    }
+
+    div#nav-logo, div#nav-brand, div#nav-hamburger {
+      display: block;
+    }
+
+  }
+}
+
+/****************************************************/
 
 div#header-image {
   margin: 0;

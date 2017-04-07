@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: navigation
 title:  "Altnasenfahrt 2017!"
 date:   2017-04-06 19:54:35 +0200
 author: "Jane Doe"
