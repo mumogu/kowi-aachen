@@ -35,9 +35,10 @@ nav#navbar {
 
   div#nav-always {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     img {
       filter: invert(100%);
@@ -46,14 +47,27 @@ nav#navbar {
 
     div#nav-brand {
       flex: 1;
+
+    }
+
+    div#nav-hamburger {
+      page-break-after: always;
     }
 
     div {
       padding: 10px;
     }
+
+    div#nav-element {
+      display: none;
+    }
+
+    input[type=checkbox]:checked ~ div#nav-element {
+      display: block;
+    }
   }
 
-  div#nav-toggle {
+ /* div#nav-toggle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,19 +78,18 @@ nav#navbar {
       padding: 10px;
     }
 
-    input[type=checkbox]:checked ~ div {
-      display: block;
-    }
-  }
+
+  }*/
 
   @media (min-width: 800px) {
     div#nav-hamburger {
       display: none;
     }
 
-    div#nav-toggle div {
+    div#nav-always div#nav-element {
       display: block;
     }
+
   }
 }
 
