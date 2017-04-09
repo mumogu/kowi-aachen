@@ -60,6 +60,12 @@ nav#navbar {
 
   div#nav-hamburger {
     display: block;
+    font-weight: bold;
+    font-size: larger;
+
+    a:hover {
+      border: none;
+    }
   }
 
   div {
