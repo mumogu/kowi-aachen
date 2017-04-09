@@ -82,45 +82,20 @@ nav#navbar {
 
 }
 
-/****************************************************/
+nav#navbar div#page-title {
 
-div#header-image {
-  margin: 0;
-  height: 40vh;
-  background-color: $color-bg;
-  background-image: url("/img/schleiden.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-div#logo {
-  padding-top: 1vh;
-  color: black;
-  text-align: center;
-  filter: invert(100%);
-
-  span {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 6vh;
-    margin-left: 2vh;
-  }
-
-  img {
-    height: 6vh;
-  }
-
-}
-
-div.main-message {
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 10vh;
   max-width: 800px;
-  color: white;
+  margin: 0 auto;
+  padding: 10px;
 
-  h1, p {
+  h1 {
+    color: white;
     font-weight: 100;
+
+    @media (min-width: 800px) {
+      margin-left: 50px;
+      margin-top: 80px;
+    }
   }
+
 }

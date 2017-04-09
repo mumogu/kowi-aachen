@@ -1,5 +1,5 @@
 ---
-layout: headerimage
+layout: navigation
 title: "Kowi Aachen e.V."
 subtitle: "Das ist der Untertitel"
 ---
@@ -14,17 +14,19 @@ subtitle: "Das ist der Untertitel"
     </div>
 </div>
 
-<div class="one">
-    <h2>Aktuelles</h2>
+<div class="row">
+    <div class="one">
+        <h2>Aktuelles</h2>
 
-    {% for post in site.posts %}
+        {% for post in site.posts %}
 
-    <h3>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h3>
+        <h3>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
 
-    {% endfor %}
+        {% endfor %}
+
+    </div>
 
 </div>
-
 
