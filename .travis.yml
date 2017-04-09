@@ -16,3 +16,14 @@ before_install:
 install: gem install jekyll
 
 script: gulp build 
+
+deploy:
+  provider: s3
+  access_key_id: "xxx"
+  secret_access_key: "xxx"
+  bucket: "kowi.onehot.de"
+  skip_cleanup: true
+  region: eu-central-1
+  local_dir: dist
+#  acl: public_read
+
