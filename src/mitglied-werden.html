@@ -1,10 +1,10 @@
 ---
 layout: navigation
-title: "Kowi Aachen e.V."
+title: "Mitglied werden"
 ---
 <div class="row">
     <div class="one">
-        <h2>Ein Wort über den Verein</h2>
+        <h2>Kowi Aachen e.V.</h2>
         <p>
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
             tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
@@ -28,20 +28,3 @@ title: "Kowi Aachen e.V."
         </p>
     </div>
 </div>
-
-<div class="row">
-    <div class="one">
-        <h2>Aktuelles</h2>
-
-        {% for post in site.posts %}
-
-        <h3>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-
-        {% endfor %}
-
-    </div>
-
-</div>
-
