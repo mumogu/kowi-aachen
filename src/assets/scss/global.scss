@@ -16,11 +16,11 @@ body {
 /****************************************************/
 
 div.container {
-  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 0.2s; /* Firefox < 16 */
-  -ms-animation: fadein 0.2s; /* Internet Explorer */
-  -o-animation: fadein 0.2s; /* Opera < 12.1 */
-  animation: fadein 0.2s;
+  -webkit-animation: fadein 0.1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.1s; /* Firefox < 16 */
+  -ms-animation: fadein 0.1s; /* Internet Explorer */
+  -o-animation: fadein 0.1s; /* Opera < 12.1 */
+  animation: fadein 0.1s;
 }
 
 @keyframes fadein {
@@ -57,8 +57,8 @@ nav#navbar {
     font-weight: 100;
   }
 
-  a:hover {
-    border-bottom: 1px solid $color-primary;
+  a:hover, .nav-active {
+    border-bottom: 2px solid $color-primary;
   }
 
   img {
