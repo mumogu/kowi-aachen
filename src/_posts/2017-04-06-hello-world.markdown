@@ -19,5 +19,7 @@ Das ist ein Post. Die Markdown-Datei liegt in src/_posts. Das ist ein Post. Die 
  Das ist ein Post. Die Markdown-Datei liegt in src/_posts.
   Das ist ein Post. Die Markdown-Datei liegt in src/_posts.
 
+![image-title-here](/img/gruendung.png){:class="post-image"}
+
   Das ist ein Post. Die Markdown-Datei liegt in src/_posts.
   Das ist ein Post. Die Markdown-Datei liegt in src/_posts.
