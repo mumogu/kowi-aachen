@@ -1,0 +1,30 @@
+$color-bg: rgb(35, 47, 62);
+$color-primary: rgb(205, 73, 57);
+
+div.post-teaser {
+  min-height: 200px;
+  padding-top: 20px;
+
+  background-color: $color-bg;
+  //background-image: url("/img/gruendung.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h3 {
+    font-size: x-large;
+    color: white;
+    padding: 20px;
+
+
+    display: table;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    span {
+      font-size: small;
+    }
+
+  }
+
+
+}

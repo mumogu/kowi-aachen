@@ -4,6 +4,7 @@ title:  "Das ist ein Post"
 date:   2017-04-06 10:54:35 +0200
 author: "Jane Doe"
 excerpt_separator: <!--more-->
+image: stammtisch.jpg
 ---
 ## Post!
 

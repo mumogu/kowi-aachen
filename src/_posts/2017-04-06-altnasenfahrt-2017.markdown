@@ -3,7 +3,9 @@ layout: post
 title:  "Altnasenfahrt 2017!"
 date:   2017-04-06 19:54:35 +0200
 author: "Jane Doe"
+image: gruendung.png
 excerpt_separator: <!--more-->
+image: schleiden.jpg
 ---
 
 ## Wer kommt eigentlich auf solche Ideen?
