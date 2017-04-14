@@ -29,7 +29,9 @@ image: schleiden.jpg
     {% for post in site.posts %}
     <div class="column half">
 
-        <div class="post-teaser" style="background-image: url('/img/{{ post.image }}');">
+        <div class="post-teaser" style="background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('/img/{{ post.image }}');">
+
+
 
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <h3>

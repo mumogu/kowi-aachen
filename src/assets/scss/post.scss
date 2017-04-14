@@ -5,11 +5,12 @@ div.post-teaser {
   min-height: 200px;
   padding-top: 20px;
 
-  background-color: $color-bg;
+  //background-color: rgb(1, 1, 1);
   //background-image: url("/img/gruendung.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-blend-mode: multiply;
 
   h3 {
     font-size: x-large;
@@ -25,6 +26,10 @@ div.post-teaser {
     }
 
   }
-
-
 }
+
+div.profile-image {
+  text-align: center;
+}
+
+
