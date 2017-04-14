@@ -2,11 +2,12 @@ $(document).ready(function() {
 
     $('div#nav-hamburger').click(function() {
 
-        console.log("clicked")
+        $('div#nav-hamburger').toggleClass('nav-rotated');
 
         $('div#nav-mobile').slideToggle('slow', function() {
             //complete
         })
+
     })
 
 })

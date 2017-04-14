@@ -13,8 +13,27 @@ body {
   color: white;
 }
 
+/****************************************************/
+
+div.container {
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.2s; /* Firefox < 16 */
+  -ms-animation: fadein 0.2s; /* Internet Explorer */
+  -o-animation: fadein 0.2s; /* Opera < 12.1 */
+  animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /****************************************************/
+
 nav#navbar {
   //background-color: $color-bg;
 
@@ -91,7 +110,6 @@ nav#navbar {
 }
 
 nav#navbar div#page-title {
-
   max-width: 800px;
   margin: 0 auto;
   padding: 10px;
@@ -105,12 +123,14 @@ nav#navbar div#page-title {
       margin-top: 80px;
     }
   }
-
 }
 
 div#footer-row {
-
   text-align: center;
   padding-top: 30px;
   padding-bottom: 50px;
+}
+
+.nav-rotated {
+  transform: rotate(90deg);
 }
