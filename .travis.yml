@@ -30,5 +30,6 @@ deploy:
   local_dir: src
   on: 
     branch: deploy
+    repo: mumogu/gulp-jekyll-boilerplate
 #  acl: public_read
 
