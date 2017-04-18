@@ -2,7 +2,6 @@
 Jekyll übernimmt das Generieren der html Dateien, alles andere macht GULP.
 
 ## Installieren
-
     npm install 
 
 ## Build
