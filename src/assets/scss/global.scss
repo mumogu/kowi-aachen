@@ -1,7 +1,7 @@
 $color-bg: rgb(35, 47, 62);
-$color-primary: hotpink;
+$color-primary: rgb(205, 73, 57);
 
-a, a:link, a:visited, a:active  {
+a, a:link, a:visited, a:active {
   color: $color-primary;
   text-decoration: none;
 }
@@ -13,43 +13,124 @@ body {
   color: white;
 }
 
-div#header-image {
-  margin: 0;
-  height: 40vh;
-  background-color: $color-bg;
-  background-image: url("/img/schleiden.jpg");
+/****************************************************/
+
+div.container {
+  -webkit-animation: fadein 0.1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.1s; /* Firefox < 16 */
+  -ms-animation: fadein 0.1s; /* Internet Explorer */
+  -o-animation: fadein 0.1s; /* Opera < 12.1 */
+  animation: fadein 0.1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/****************************************************/
+
+nav#navbar {
+  //background-color: $color-bg;
+
+  //background-image: url("/img/schleiden.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-div#logo {
-  padding-top: 1vh;
-  color: black;
-  text-align: center;
-  filter: invert(100%);
+  div.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-  span {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 6vh;
-    margin-left: 2vh;
+  min-height: 40vh;
+
+  a {
+    color: white;
+    font-weight: 100;
+  }
+
+  a:hover, .nav-active {
+    border-bottom: 2px solid $color-primary;
   }
 
   img {
-    height: 6vh;
+    filter: invert(100%);
+    height: 50px;
+  }
+
+  div#nav-brand {
+    flex: 1;
+  }
+
+  div#nav-element {
+    display: none;
+  }
+
+  div#nav-mobile {
+    text-align: right;
+    display: none;
+  }
+
+  div#nav-hamburger {
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+
+    a:hover {
+      border: none;
+    }
+  }
+
+  div {
+    padding: 10px;
+  }
+
+  @media (min-width: 800px) {
+    div#nav-element {
+      display: block;
+    }
+
+    div#nav-mobile {
+      display: none !important;
+    }
+
+    div#nav-hamburger {
+      display: none;
+    }
   }
 
 }
 
-div.main-message {
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 10vh;
+nav#navbar div#page-title {
   max-width: 800px;
-  color: white;
+  margin: 0 auto;
+  padding: 10px;
 
-  h1, p {
+  h1 {
+    color: white;
     font-weight: 100;
+
+    @media (min-width: 800px) {
+      margin-left: 50px;
+      margin-top: 80px;
+    }
   }
+}
+
+div#footer-row {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.nav-rotated {
+  transform: rotate(90deg);
 }

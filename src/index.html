@@ -1,30 +1,55 @@
 ---
-layout: headerimage
+layout: navigation
 title: "Kowi Aachen e.V."
-subtitle: "Das ist der Untertitel"
+image: schleiden.jpg
 ---
 <div class="row">
-    <div class="one">
-        <h2>Ein Wort über den Verein</h2>
+    <div class="column one">
         <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            Wir sind ein bunter Haufen ehemaliger und aktiver Ratsmitglieder, Tutoren, Weggefährten und Freunde der
+            Fachschaft Kommunikationswissenschaft 7/3 der RWTH Aachen (heute Kommunikationswissenschaft und
+            Psychologie), die auch nach ihrer aktiven Zeit nicht völlig vom ehrenamtlichen Engagement lassen können.
         </p>
+
+        <p>
+            Nach teilweise mehrjähriger Arbeit im Fachschaftsrat möchte der eine oder die andere wissen, wie es mit der
+            Fachschaft weitergeht und wie es generell um die Alma Mater so bestellt ist. Auf der anderen Seite ist das
+            Interesse der aktiven Fachschaftler groß von Erlebnissen und Geschichten der Ehemaligen zu hören und mehr
+            über die ersten Schritte im Berufsleben zu erfahren.
+        </p>
+
+        <p>
+            Wir wollen den Kontakt auch nach dem Studium halten, den Austausch mit den aktiven Fachschaftlern suchen,
+            und ehrenamtliche Arbeit fördern.
+        </p>
+
     </div>
 </div>
 
-<div class="one">
-    <h2>Aktuelles</h2>
+<div class="row">
+    <div class="column one">
+        <h1>Aktuelles</h1>
+    </div>
+</div>
 
+<div class="row">
     {% for post in site.posts %}
+    <div class="column half">
 
-    <h3>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h3>
+        <div class="post-teaser"
+             style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/img/{{ post.image }}');">
 
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <h3>
+                    {{ post.title }}<br>
+                    <span>{{ post.date | date: '%B %Y' }}</span>
+                </h3>
+
+            </a>
+
+        </div>
+    </div>
     {% endfor %}
 
 </div>
-
 

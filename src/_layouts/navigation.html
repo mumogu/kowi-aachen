@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<nav id="navbar" style="/*background-image: url('/img/{{ page.image }}*/background-image: url('/img/schleiden.jpg');');">
+    <div class="nav-links">
+        <div id="nav-logo"><img src="/img/logo.png"></div>
+        <div id="nav-brand"><a href="/">Kowi Aachen e.V.</a></div>
+        <div id="nav-hamburger"><a href="#">&#9776;</a></div>
+
+        <div id="nav-element"><a href="/" {% if page.url == '/' %} class="nav-active"{% endif %}>Aktuelles</a></div>
+        <div id="nav-element"><a href="/verein.html" {% if page.url == '/verein' %} class="nav-active" {% endif %}>Verein</a></div>
+        <div id="nav-element"><a href="/altnasenfahrt-2017.html" {% if page.url == '/altnasenfahrt-2017.html' %} class="nav-active"{% endif %}>Altnasenfahrt</a></div>
+        <div id="nav-element"><a href="/mitglied-werden.html" {% if page.url == '/mitglied-werden' %} class="nav-active"{% endif %}>Mitglied werden</a></div>
+        <div id="nav-element" class="nav-login"><a href="/login.html" {% if page.url == '/login' %} class="nav-active"{% endif %}>Login&nbsp;&nbsp;</a></div>
+    </div>
+
+    <div id="nav-mobile">
+        <div><a href="/" {% if page.url == '/' %} class="nav-active"{% endif %}>Aktuelles</a></div>
+        <div><a href="/verein.html" {% if page.url == '/verein' %} class="nav-active" {% endif %}>Verein</a></div>
+        <div><a href="/altnasenfahrt-2017.html" {% if page.url == '/altnasenfahrt-2017.html' %} class="nav-active"{% endif %}>Altnasenfahrt</a></div>
+        <div><a href="/mitglied-werden.html" {% if page.url == '/mitglied-werden' %} class="nav-active"{% endif %}>Mitglied werden</a></div>
+        <div class="nav-login"><a href="/login.html" {% if page.url == '/login' %} class="nav-active"{% endif %}>Login&nbsp;&nbsp;</a></div>
+    </div>
+
+
+    <div id="page-title">
+        <h1>{{ page.title }}</h1>
+    </div>
+</nav>
+
+<div class="container">
+    {{ content }}
+
+    <div class="row" id="footer-row">
+        <div class="one">
+            <hr>
+            <p>
+                <a href="/impressum.html">Impressum</a>
+            </p>
+        </div>
+    </div>
+</div>
