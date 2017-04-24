@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - sudo apt-get update
+      - sudo apt-get update -y
       - sudo apt-get install -y ruby2.2
       - sudo gem2.2 install jekyll
   pre_build:
