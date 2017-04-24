@@ -3,9 +3,9 @@ version: 0.1
 phases:
   install:
     commands:
-      - sudo apt-get update -y
-      - sudo apt-get install -y ruby-full
       - sudo gem install jekyll
+      - curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+      - sudo apt-get install -y nodejs
   pre_build:
     commands:
       - npm install -g gulp
