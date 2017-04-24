@@ -17,4 +17,4 @@ phases:
     commands:
       - echo Build completed.
       - ls -la dist
-      - aws s3 sync dist s3://kowi.onehot.de
+      - aws s3 sync dist s3://kowi.onehot.de --acl public-read
