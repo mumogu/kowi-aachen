@@ -16,6 +16,7 @@ phases:
   post_build:
     commands:
       - echo Build completed.
+      - ls -la dist
 artifacts:
   files:
     - dist/
